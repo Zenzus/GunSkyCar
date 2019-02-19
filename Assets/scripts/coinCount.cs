@@ -23,13 +23,18 @@ public class coinCount : MonoBehaviour
         if (other.gameObject.CompareTag("Pick Up"))
         {
             points++;
+          
 
         }
     }
 
-
-        private void OnGUI()
+    private void OnGUI()
     {
+       
+    
+        GUI.color = Color.black;    
         GUI.Label(new Rect(10, 10, 100, 20), "Score : " + points);
+      
+        
     }
 }
